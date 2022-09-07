@@ -35,11 +35,16 @@ else:
 #Sequence types: -immutable ( tuples and string)
                 #- Mutable ( lists and sets)
         #LISTS to store multi item in a single vari.
+        # alot of possibilities in list as multipe/add/slice
 #%%
-myList = [1, 3, 'four', 5, 'six', 7]
+myList = [1, 3, 'four', 5, 'six', 7] #list using bracekts []
 #%%
 myList [5]
 myList [-3]
+#%%
+mylist2 = [1, 3, 'four', 5, 'six', 7, [1, 2, 3]] 
+
+mylist2 [-1]
 #%%
         #TUPLE - is a fixed length, immutable seq. Ordered and unchangeable!!
 #%%
@@ -51,7 +56,9 @@ print(tup[0])
 
 
 #Mapping: dict (ß)
-    #DICT are used to store data values in KEY and VALUE pairs (CANNOT HAVE TWO ITEMS W/ SMAE KEY)
+    #DICT are used to store data values in KEY and VALUE pairs (CANNOT HAVE TWO ITEMS W/ SAME KEY)
+    # are unordered {"key" : "value",
+    #                 "key": "value"}
 #%%
 mycar = {
     "brand": "Ford",
@@ -60,10 +67,11 @@ mycar = {
 }
 print (mycar)
 #%%
-
+#SET - a collectiio
 #Binary: bytes, bytearray
-#None: NoneType
-
+#None: NoneType - def in null value, or no value at all
+    print(None==None)
+    print(None is None)
 # %%
 #FLOAT
 x = 4.2 
@@ -74,7 +82,7 @@ print("{: 20e}".format(a_large_number))
 print(format(a_large_number, 'f'))
 #%%
 #STRING
-print('abc\tdef') #
+print('abc\tdef') 
 print('abc\ndef') 
 print(r'abc\tdef')
 
