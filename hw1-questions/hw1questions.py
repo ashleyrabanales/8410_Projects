@@ -1,12 +1,13 @@
 #%%
 import numpy as np
 #%%
-#%%
+if __name__ == "__main__":
 
+#%%
 # Takes two integer parameters as rows and columns, 
 # and returns a numpy array with specified rows and columns of the value of 1
 # HINT: Look at the np.ones function in the NumPy documentaion
-def q1_part1(rows:int, cols:int):
+  def q1_part1(rows:int, cols:int):
     a = np.ones((rows, cols))
     return a
     
