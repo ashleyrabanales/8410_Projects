@@ -1,10 +1,10 @@
 #%%
+from array import array
 import numpy as np
-#%%
+
 if __name__ == "__main__":
 
-#%%
-# Takes two integer parameters as rows and columns, 
+# # Takes two integer parameters as rows and columns, 
 # and returns a numpy array with specified rows and columns of the value of 1
 # HINT: Look at the np.ones function in the NumPy documentaion
   def q1_part1(rows:int, cols:int):
@@ -18,14 +18,14 @@ if __name__ == "__main__":
 # For example, if start=1, and end=3, the result should be [1,2,3]
 # HINT: Look at the arange function in the NumPy documentaion
 def q1_part2(start:int, end:int):
-  np.arrange(1,4) #chage the parameters of functions
-
+  b = np.arange(start, end+1) #chage the parameters of functions
+  return b
 #%%
 # Takes a numpy array as input,
 # and returns an integer number with the value of max - min
-def q1_part3(arr:np.ndarray):
-  pass
-
+def q1_part3(arr:np.ndarray): 
+  c = np.max(q1_part3) - np.min(q1_part3)
+  return c
 
 #%%
 # Takes a numpy array as input, and creates a new flat array with same values but with two modifications:
@@ -35,7 +35,6 @@ def q1_part3(arr:np.ndarray):
 # HINT: Look at the flatten function in the NumPy documentaion
 def q2(arr: np.ndarray):
     pass
-
 
 #%%
 # Takes two numpy arrays "a1", and "a2" as input, and returns a number "c" 

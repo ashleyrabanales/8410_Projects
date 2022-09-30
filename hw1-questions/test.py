@@ -60,9 +60,6 @@ def avg(a, b, c):
     average = (a + b + c) / 3
     return average
 
-
-
-
 #%%
 #integers will return an integers
 if __name__ == "__main__": #only run the following if test.py is executed directly, 
