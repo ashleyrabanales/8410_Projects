@@ -42,7 +42,7 @@ def q2(arr: np.ndarray):
 # "c" is the minimum number of the element-wise sum of a1 and a2, if not negative, otherwise it should be 0
 def q3(a1:np.ndarray, a2:np.ndarray):
     c =  np.add(a1, a2) 
-    c_min = np.min(c) #fixed loop by doing only 'c'
+    c_min = np.min(c) #fixed loop by doing only 'c' and new element
     if c_min > 0:
        return c_min
     else:
