@@ -20,7 +20,7 @@ def q1_part2(start:int, end:int):
 # Takes a numpy array as input,
 # and returns an integer number with the value of max - min
 def q1_part3(arr:np.ndarray): 
-  c = np.max(arr) - np.min(arr)
+  c = np.max(arr) - np.min(arr) #range is max-min
   return c
 
 # Takes a numpy array as input, and creates a new flat array with same values but with two modifications:
