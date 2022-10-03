@@ -1,7 +1,6 @@
 #%%
 import numpy as np
 
-
 # # Takes two integer parameters as rows and columns, 
 # and returns a numpy array with specified rows and columns of the value of 1
 # HINT: Look at the np.ones function in the NumPy documentaion
