@@ -94,7 +94,16 @@ print("without any parameters=", cube)
 cube = cube_area3(2)
 print("with any parameters=", cube)
 
-
-# %%
-
+#%%
+#LOOPS
+  # i --> column
+  # j --> row
+def parse_2d_arr(arr = [[1,2,300][5,6,700,8,9,-1]]):
+    for col in range(0,len(arr)):
+        for row in range(0,len(arr)):
+            if arr[col][row] > 100:
+                arr[row][col] = 100
+            elif arr[col][row] < 0 :
+                arr[col][row] = 0
+    print(arr)
 #
