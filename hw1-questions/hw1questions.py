@@ -1,4 +1,5 @@
 #%%
+from this import d
 import numpy as np
 
 # # Takes two integer parameters as rows and columns, 
@@ -45,19 +46,16 @@ def q3(a1:np.ndarray, a2:np.ndarray):
        return c_min
     else:
         return 0
-   
-   #worked for min of the arrays 9 and -3 but not produce 0 for less than 0
-   #  e =  np.add(a1, a2)
-   #  f = np.add(a1, a2)
-   # if [(np.min(f) >  0)] == 0:
-   #    return 0
-   # else:
-   #    return np.min(e)
-   
-  #  c  = np.add(a1, a2)
-  #  np.min(c)
-  #      return np.min(c) > 0:
-  # else
-  #     return 0
 
- 
+    #OR
+  #  d = np.min(a1+a2)
+  #  if d>0uy
+  #    return d  
+  #  else:
+  #      return d   
+
+  return d if d>0 else 0 
+
+  #example:
+    my_list = [1, 2, 3, 4 ,5 ]
+    a = sum(my_list) if a[1] == 1 else 0 
