@@ -53,9 +53,9 @@ def q3(a1:np.ndarray, a2:np.ndarray):
   #    return d  
   #  else:
   #      return d   
-
-  return d if d>0 else 0 
+#
+  #return d if d>0 else 0 
 
   #example:
-    my_list = [1, 2, 3, 4 ,5 ]
-    a = sum(my_list) if a[1] == 1 else 0 
+  #  my_list = [1, 2, 3, 4 ,5 ]
+  # a = sum(my_list) if a[1] == 1 else 0 
