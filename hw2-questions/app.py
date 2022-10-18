@@ -8,7 +8,7 @@ if __name__ == "__main__":
     #   Please refer to the Plagirasm section on the syllabus for more information.
 
     print("\n----Q1----")
-    a1 = [2,"40",1.2,6]
+    a1 = [2, "40", 1.2, 6]
     a2 = [True, 19, 19.5, False]
     print(hw.get_integers(a1)) # expected output: [2, 6]
     print(hw.get_integers(a2)) # expected output: [19]
