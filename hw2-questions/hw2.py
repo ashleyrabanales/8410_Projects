@@ -32,7 +32,7 @@ def is_divisible_by_three(the_list, index):
         else:
             return 'False'
 
-#used hw 1-3 to figure it out 
+#used hw 1.3 to figure it out 
 # c =  np.add(a1, a2) 
 #    c_min = np.min(c) #fixed loop by doing only 'c' and new element
 #   if c_min > 0:
@@ -105,7 +105,7 @@ def average_rating(r):
 #      d_avg = d_avg + d
 #      avg = d_avg / len(r) 
 #   return avg 
-   #this is for list and im searching for dict list
+   #this is for list and how do i make it for dict list?
 
 
 """Calculates the average ratings of all customer reviews
