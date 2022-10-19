@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 # Q1. 
 def get_integers(lst):   
@@ -85,14 +86,14 @@ def remove_duplicates(items):
 
 #Q4.
 def average_rating(r):
-    d_avg = []
+    d_avg = 0
     for val in r:
-        d_avg += val
+        d_avg = d_avg + val['rate']
     d_avg = d_avg / len(r)
-    return(+str(d_avg))
+    return(+float(d_avg))
 
 
-#   d_avg = []
+#  d_avg = []
 # for r in r:
 #    for d in r['rate']:
 #        if d not in d_avg:
@@ -119,13 +120,23 @@ def average_rating(r):
 
 #Q5. 
 def ratings_below_two(lst):
+    new_list = [i for i in lst if i["rate"] <= 2]
+    e_below = [] 
+    for i in new_list:
+        if i["product_id"] not in e_below:
+                e_below.append(i["product_id"])
+    return e_below
+
+#new_lst = [i for i in lst if rate < 2]
+#  for"rate" <= 2:
+
 #    products = []
 #    for p in lst:
- #           if p <= 2:
+#           if p <= 2:
 #              products.append(p)
 #                return 
 
-    """ Finds products with at least one rating of <=2
+""" Finds products with at least one rating of <=2
 
     Args:
         lst (list): A list of customer reviews. Each customer review is a Python dictionary.

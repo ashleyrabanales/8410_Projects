@@ -36,3 +36,9 @@ for i in sold_items:
         if p == "D2":
             print(i["customer_name"])
 # %%
+for i in sold_items:
+    for p in i:
+        if p == "member_id":
+            print(i["customer_name"])
+
+# %%
