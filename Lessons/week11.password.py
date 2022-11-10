@@ -43,3 +43,4 @@ pswd = pswd[:random_index] + str(num) + pswd[:random_index+1:]
 print(pswd)
 
  # %%
+
