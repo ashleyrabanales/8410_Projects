@@ -13,26 +13,22 @@ df=df.drop("Number of Records", axis=1)
 df2 = df._get_numeric_data()
 df2[df2 < 0] = 0
 
+#getting the mean, max, min, std,
+df.describe()
+
 if __name__ == "__main__":
 #Quesion 1
-    a = ff.q1(df)
+    a = ff.get_product_types(df)
     print("Q1.(Q1):\n", a) 
 
 # #Question 2
-    b = ff.q1(df)
-    print("Q1.(Q1):\n", b) 
-
-# #Question 3
-# #print("\n----Q3----")
-#     #c = 
-# pass
+    # b = ff.q2(df )
+    # print("Q2.(Q2):\n", b) 
 
 # #Question 4
-# #print("\n----Q4----")
-#     #d = 
-# pass
+    df['range_Coffee_Sales'] = df.apply(lambda b: ff.categories(b), axis=1)
+    print(df.range_Coffee_Sales)
 
 # #Question 5
-# #print("\n----Q5----")
-#     #e = 
-# pass
+
+
