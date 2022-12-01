@@ -16,27 +16,11 @@ df2 = df._get_numeric_data()
 df2[df2 < 0] = 0
 
 #getting the mean, max, min, std,sum, and count
-df.describe()
+df.head()
 
+df.iloc[1,5]
 
-bean = []
-for b in df['Type']:
-    #for y in df['Type'] == 'Coffee' and df['Type'] == 'Expresso':
-    if b == 'Coffee':
-        bean.append(b)
-    elif b == 'Expresso':
-        bean.append(b)
-print(bean)
-
-leaf = []
-for l in df['Type']:
-    if l == 'Tea':
-    #x in df['Type'] == 'Tea' and df['Type'] == 'Herbal Tea':
-        leaf.append(l)
-    elif l == 'Herbal Tea':
-        leaf.append(l)
-print(leaf)
-
+len(df['Type'])
 
 
 ####Questions 1 - Loops (for, or while) 
@@ -51,32 +35,27 @@ def get_product_types(df):
 
 
 ####Question 2 - Conditions with if statements
-def q2(df):  
-    bean = []
-    leaf = []
-    for b in bean:
-        if b in df['Type'] == 'Coffee' and df['Type'] == 'Expresso': #Did a for loop in to the profit column 
-            return pd.unique(bean)
-    for l in leaf:
-        if l in df['Type'] == 'Tea' and df['Type'] == 'Herbal Tea':
-            leaf.append(l)
-            return leaf.unique(leaf) 
 
 
 #Question 3 - Dictionaries
-def q2(df):
-    area_profit = {} # dict for storing profit of each area code
-    for areacode in df['Area Code'].unique(): # looping through area codes
-        if areacode not in area_profit.keys():
-            area_profit[areacode]=df[df['Area Code'] == areacode]['Profit'].sum() # storing total profit of particular area code in key value pair
-    v = list(area_profit.values()) # listing values
-    k = list(area_profit.keys()) # listing keys
-    print("Area Code with Max profit:",k[v.index(max(v))]) # getting key (area code) with maximum value
-pass
-
+# def q2(df):
+#     area_profit = {} # dict for storing profit of each area code
+#     for areacode in df['Area Code'].unique(): # looping through area codes
+#         if areacode not in area_profit.keys():
+#             area_profit[areacode]=df[df['Area Code'] == areacode]['Profit'].sum() # storing total profit of particular area code in key value pair
+#     v = list(area_profit.values()) # listing values
+#     k = list(area_profit.keys()) # listing keys
+#     print("Area Code with Max profit:",k[v.index(max(v))]) # getting key (area code) with maximum value
+# pass
 
 #Question 4 -String functions (such as split, join, and lower)
-    
+def low(df, e):
+    df['type2'] = df.iloc[:,e].str.lower()
+    return df['type2']
+    #df['type2'] = df['Type'].lower()
+
+
+
 #Getting 25%, 50%, and 75% of the column Coffee Sales from df.describe
 def categories(b):  
     if b['Coffee Sales'] <= 100:
@@ -85,10 +64,6 @@ def categories(b):
         return 'medium'
     elif b['Coffee Sales'] > 138:
         return 'high'
-
-
-
-
 
 #Question 5 - Error handling with try except blocks
 # for i in df["Area Code"].unique():

@@ -22,13 +22,20 @@ if __name__ == "__main__":
     print("Q1.(Q1):\n", a) 
 
 # #Question 2
-    # b = ff.q2(df )
-    # print("Q2.(Q2):\n", b) 
+
+
 
 # #Question 4
-    df['range_Coffee_Sales'] = df.apply(lambda b: ff.categories(b), axis=1)
-    print(df.range_Coffee_Sales)
+    b = ff.low(df,5)
+    print("Q4.(Q4):\n", b)
 
-# #Question 5
+# #Question 3
+df['range_Coffee_Sales'] = df.apply(lambda b: ff.categories(b), axis=1)
+print(df.range_Coffee_Sales)
+
+# #Question 4
+
+
+
 
 
