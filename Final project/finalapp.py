@@ -17,23 +17,26 @@ df2[df2 < 0] = 0
 df.describe()
 
 if __name__ == "__main__":
-#Quesion 1
-    a = ff.get_product_types(df)
-    print("Q1.(Q1):\n", a) 
 
-# #Question 2
+#Method 1
+    a=ff.method1(df)
+    print("Method 1.\n", a)
 
+#Method 2
+    b= ff.method2(df)
+    print("Method2.Area Code with Max profit:", b)
 
+#Method 3
+    c = df['range_Coffee_Sales'] = df.apply(lambda b: ff.method3(b), axis=1)
+    print(df.range_Coffee_Sales)
 
-# #Question 4
-    b = ff.low(df,5)
-    print("Q4.(Q4):\n", b)
+#Method 4
+    d= ff.method4(df,5)
+    print("Method4.(Q4):\n", d)
 
-# #Question 3
-df['range_Coffee_Sales'] = df.apply(lambda b: ff.categories(b), axis=1)
-print(df.range_Coffee_Sales)
-
-# #Question 4
+#Method 5
+    e=ff.method5(df)
+    print("Method5.\n", e)
 
 
 
